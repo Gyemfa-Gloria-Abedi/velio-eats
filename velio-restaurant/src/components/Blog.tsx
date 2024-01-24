@@ -3,10 +3,10 @@ import spices from '../assets/spices.jpg'
 
 const Blog = () => {
   return (
-    <div className="flex flex-col my-4">
+    <div className="flex flex-col my-4 ">
       <h3 className="mx-auto font-bold text-2xl border-b-2 border-amber-600">Blog</h3>
       <img src={spices} />
-      <div className="relative -mt-[45.5rem] mx-8 w-3/6">
+      <div className="relative lg:-mt-[45.5rem] -mt-[35.5rem] mx-8 w-3/6">
         <h2 className="text-4xl font-black leading-[70px] w-2/3">
           A Culinary Journey with
           <span className="text-amber-600 ml-1">the Magic of Spices</span>
