@@ -5,10 +5,10 @@ import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import groundSpice from "../assets/grounded-spices.jpg";
 
-const Login = () => (
-  <div className="flex flex-row mx-auto md:-mt-16 md:justify-normal justify-center md:px-0 px-2">
+const Signup = () => (
+  <div className="flex flex-row mx-auto md:-mt-2 md:justify-normal justify-center md:px-0 px-2">
     <div className="md:w-2/6 w-full  m-auto">
-      <h2 className="text-center text-3xl font-bold leading-[70px]">Login</h2>
+      <h2 className="text-center text-3xl font-bold leading-[70px]">Register</h2>
       <Formik
         initialValues={{ email: "", password: "" }}
         validate={(values) => {
@@ -33,6 +33,22 @@ const Login = () => (
           <Form className="flex flex-col">
             <div className="mt-6 mb-4 flex flex-col gap-1">
               <label className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                Name
+              </label>
+              <Field
+                type="name"
+                name="name"
+                className="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-amber-600 focus:ring-amber-600 block w-full rounded-md sm:text-sm focus:ring-1"
+                placeholder="enter name"
+              />
+              <ErrorMessage
+                name="name"
+                component="div"
+                className="text-red-500"
+              />
+            </div>
+            <div className="mt-6 mb-4 flex flex-col gap-1">
+              <label className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
                 Email
               </label>
               <Field
@@ -40,6 +56,22 @@ const Login = () => (
                 name="email"
                 className="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-amber-600 focus:ring-amber-600 block w-full rounded-md sm:text-sm focus:ring-1"
                 placeholder="you@example.com"
+              />
+              <ErrorMessage
+                name="email"
+                component="div"
+                className="text-red-500"
+              />
+            </div>
+            <div className="mt-6 mb-4 flex flex-col gap-1">
+              <label className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                Phone
+              </label>
+              <Field
+                type="phone"
+                name="phone"
+                className="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-amber-600 focus:ring-amber-600 block w-full rounded-md sm:text-sm focus:ring-1"
+                placeholder="(+)"
               />
               <ErrorMessage
                 name="email"
@@ -63,6 +95,22 @@ const Login = () => (
                 className="text-red-500"
               />
             </div>
+            <div className="mt-6 mb-4 flex flex-col gap-1">
+              <label className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+                Confirm password
+              </label>
+              <Field
+                type="password"
+                name="password"
+                className="px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-amber-600 focus:ring-amber-600 block w-full rounded-md sm:text-sm focus:ring-1"
+                placeholder="........"
+              />
+              <ErrorMessage
+                name="password"
+                component="div"
+                className="text-red-500"
+              />
+            </div>
             <NavLink to="/velio-restuarant-forgotPass" className="flex self-end mb-6 text-sky-500">
               Forgot Password?
             </NavLink>
@@ -71,7 +119,7 @@ const Login = () => (
               disabled={isSubmitting}
               className="bg-amber-600 p-2 rounded text-white"
             >
-              Sign in
+              Register
             </button>
             <div className="my-4 flex justify-center content-center gap-1">
               <div className="w-2/4 h-px bg-gray-200 self-center"></div>
@@ -86,10 +134,10 @@ const Login = () => (
               <FaFacebook className="text-blue-600 self-center" />
               <p className="self-center">Sign in with Facebook</p>
             </button>
-            <div className="flex justify-center gap-1">
-              Don't have an account?
-              <NavLink to="/velio-restuarant-signup" className="text-red-700">
-                Sign up
+            <div className="flex justify-center gap-1 mb-8">
+              Already have an account?
+              <NavLink to="/velio-restuarant-login" className="text-red-700">
+                Login
               </NavLink>
             </div>
           </Form>
@@ -101,8 +149,9 @@ const Login = () => (
       alt="spices"
       className="h-full w-2/5 md:block hidden"
     />
-    <p className="absolute bottom-0 text-gray-400">@copyright velio-restaurant</p>
+    <p className="relative bottom-0 text-gray-400">@copyright velio-restaurant</p>
   </div>
 );
 
-export default Login;
+export default Signup;
+
