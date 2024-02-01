@@ -10,11 +10,11 @@ const OrderDialog = () => {
         <h2>Fish salad</h2>
         <p>Desription</p>
         <p>Select to add an item or unselect to remove an item</p>
-      <Formik>
+      {/* <Formik>
         <Form>
-            <Field
+            <Field/>
         </Form>
-      </Formik>
+      </Formik> */}
     </Dialog>
   );
 };
