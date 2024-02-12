@@ -10,13 +10,16 @@ const Navbar = ({ user }) => {
     <div className=" flex justify-between  m-auto py-3 bg-white">
       <div className="self-center">Velio Restuarant</div>
 
-      <div className="flex justify-between w-1/4 content-center self-center">
+      {
+        user === "client" &&
+        (<div className="flex justify-between w-1/4 content-center self-center">
         <NavLink to="#" className="">
           Blog
         </NavLink>
         <NavLink to="#">Menu</NavLink>
         <NavLink to="#">Order</NavLink>
-      </div>
+      </div>)
+      }
       <div className="flex justify-between content-center gap-4">
         <SearchComponent />
         {user === "admin" && <AiOutlineBell className="self-center" />}
