@@ -2,6 +2,7 @@ import React from 'react';
 import Cards from '../reusables/Cards';
 import MenuCards from './MenuCards';
 import { MdOutlineAddBusiness } from "react-icons/md";
+import DeliveryCards from './DeliveryCards';
 
 const Dashboard = () => {
   return (
@@ -23,7 +24,8 @@ const Dashboard = () => {
         </Cards>
         <div className='mt-6'>
         <Cards >
-            <p>deliver contacts</p>
+            <p>Delivery contacts</p>
+            <DeliveryCards/>
         </Cards>
         </div>
       </div>
