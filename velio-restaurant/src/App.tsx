@@ -5,6 +5,7 @@ import Dashboard from "./views/Dashboard";
 import Login from "./views/Login";
 import Signup from "./views/Signup";
 import ForgotPwd from "./views/ForgotPwd";
+import AdminDashboard from "./views/AdminDashboard";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/velio-restuarant-login" element={<Login/>}/>
         <Route path="/velio-restuarant-signup" element={<Signup/>}/>
         <Route path="/velio-restuarant-forgotPass" element={<ForgotPwd/>}/>
+        <Route path="/velio-restuarant-admin" element={<AdminDashboard/>}/>
       </Routes>
     </>
   )
