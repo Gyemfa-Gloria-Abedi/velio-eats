@@ -4,11 +4,15 @@ import { FiLogIn } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import { HiChevronDown } from "react-icons/hi";
 import { AiOutlineBell } from "react-icons/ai";
+import logo from "../assets/velio_eats_Logo.png";
 
 const Navbar = ({ user }) => {
   return (
     <div className=" flex justify-between  m-auto py-3 bg-white">
-      <div className="self-center">Velio Restuarant</div>
+      <div className="self-center">
+        <img src={logo} alt="logo" className="w-24 "/>
+        {/* <img src="../assets/Velioeats_Logo" alt="logo"/> */}
+      </div>
 
       {
         user === "client" &&

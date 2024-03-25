@@ -1,0 +1,47 @@
+[
+    {
+        "id": 0,
+        "img":"00",
+        "menu_name": "",
+        "description": "",
+        "price":"",
+        "food_availability": "",
+        "expected_delivery_time": "20 mins"
+    },
+    {
+        "id": 0,
+        "img":"00",
+        "menu_name": "",
+        "description": "",
+        "price":"",
+        "food_availability": "",
+        "expected_delivery_time": "20 mins"
+    },
+    {
+        "id": 0,
+        "img":"00",
+        "menu_name": "",
+        "description": "",
+        "price":"",
+        "food_availability": "",
+        "expected_delivery_time": "20 mins"
+    },
+    {
+        "id": 0,
+        "img":"00",
+        "menu_name": "",
+        "description": "",
+        "price":"",
+        "food_availability": "",
+        "expected_delivery_time": "20 mins"
+    },
+    {
+        "id": 0,
+        "img":"00",
+        "menu_name": "",
+        "description": "",
+        "price":"",
+        "food_availability": "",
+        "expected_delivery_time": "20 mins"
+    }
+]
