@@ -19,7 +19,7 @@ const Introduction = () => {
           Get Started
         </button>
       </div>
-      <img src={food} className="w-6/12 " />
+      <img src={food} className="w-6/12 " alt=''/>
     </div>
   )
 }

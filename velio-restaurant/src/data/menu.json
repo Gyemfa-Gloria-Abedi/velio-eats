@@ -1,47 +1,57 @@
 [
     {
         "id": 0,
-        "img":"00",
-        "menu_name": "",
-        "description": "",
-        "price":"",
-        "food_availability": "",
+        "img":"./images/food.jpg",
+        "menu_name": "Fish Salad",
+        "description": "Tuna Salad",
+        "price":"$4",
+        "food_availability": "Availabe",
         "expected_delivery_time": "20 mins"
     },
     {
-        "id": 0,
-        "img":"00",
-        "menu_name": "",
-        "description": "",
-        "price":"",
-        "food_availability": "",
+        "id": 1,
+        "img":"../assets/salad.jpg",
+        "menu_name": "Vegan Salad",
+        "description": "Salad made from fruit and vegetable",
+        "price":"$4",
+        "food_availability": "Availabe",
+        "expected_delivery_time": "30 mins"
+    },
+    {
+        "id": 2,
+        "img":"../assets/spices.jpg",
+        "menu_name": "Powdered Chili Pepper",
+        "description": "100% natural with zero additives",
+        "price":"$10 per gram",
+        "food_availability": "Available",
         "expected_delivery_time": "20 mins"
     },
     {
-        "id": 0,
-        "img":"00",
-        "menu_name": "",
-        "description": "",
-        "price":"",
-        "food_availability": "",
+        "id": 3,
+        "img":"../assets/grounded-spices.jpg",
+        "menu_name": "Natural Spices",
+        "description": "100% natural with zero additives",
+        "price":"$10 per gram",
+        "food_availability": "Available",
         "expected_delivery_time": "20 mins"
     },
     {
-        "id": 0,
-        "img":"00",
-        "menu_name": "",
-        "description": "",
-        "price":"",
-        "food_availability": "",
-        "expected_delivery_time": "20 mins"
+        "id": 4,
+        "img":"../assets/bread.jpg",
+        "menu_name": "Sour dough bread",
+        "description": "Naturally generated yeast",
+        "price":"$8",
+        "food_availability": "Availabe",
+        "expected_delivery_time": "40 mins"
     },
     {
-        "id": 0,
-        "img":"00",
-        "menu_name": "",
-        "description": "",
-        "price":"",
-        "food_availability": "",
-        "expected_delivery_time": "20 mins"
+        "id": 4,
+        "img":"../assets/bread.jpg",
+        "menu_name": "Sour dough bread",
+        "description": "Naturally generated yeast",
+        "price":"$8",
+        "food_availability": "Availabe",
+        "expected_delivery_time": "40 mins"
     }
+
 ]

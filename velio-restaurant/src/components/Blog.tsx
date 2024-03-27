@@ -30,7 +30,7 @@ const Blog = () => {
           <li>Cloves</li>
         </ol>
       </div>
-      <button className="border-2 border-red-800 bg-red-800 py-1 px-4 rounded ml-8 font-semibold mt-4 hover:bg-white w-fit text-slate-200">
+      <button className="border-2 border-red-800 bg-red-800 py-1 px-4 rounded ml-8 font-semibold mt-4 w-fit text-slate-200">
         Read more
       </button>
     </div>
