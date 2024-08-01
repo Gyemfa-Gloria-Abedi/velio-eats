@@ -15,35 +15,39 @@ const MenuList = () => {
     setSelectedItemId(id);
     dispatch(toggleDialog())
   };
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsToShow = 3;
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? menu.length - itemsToShow : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === menu.length - itemsToShow ? 0 : prevIndex + 1
+    );
+  };
+
   return (
     <div className="grid grid-col-3 gap-2">
       <div className="flex flex-col">
         <h2 className="mx-auto font-bold text-2xl border-b-2 border-amber-600">
           Our Menu
         </h2>
-        <div className="flex gap-4">
-          <IoIosArrowDropleft/>
-          <IoIosArrowDropright />
+        <div className="flex gap-4  cursor-pointer">
+          <IoIosArrowDropleft className="absolute left-16 mt-36 w-6 h-6" onClick={handlePrev}/>
+          <IoIosArrowDropright className="absolute right-16 mt-36 w-6 h-6" onClick={handleNext}/>
         </div>
-        <div className="flex gap-6 flex-wrap mt-4" >
-            {menu.map((item, index)=>(
-          <div className="w-1/4 border shadow-md pb-4" key={index}>
-            <HiOutlineDotsHorizontal className=""/>
+        <div className="flex gap-6 flex-wrap justify-center mt-4 m-auto" >
+            {menu.slice(currentIndex, currentIndex + itemsToShow).map((item, index)=>(
+          <div className="min-w-64 border shadow-md pb-4 cursor-pointer" key={index} onClick={()=>handleToggleDialog(item.id)}>
             <img src={item.img} className="w-full h-48 rounded" alt={item.menu_name} />
             <div className="rounded px-2 mt-4">
               <h3 className=" font-bold text-lg">{item.menu_name}</h3>
-              <p className="text-base italic">
+              <p className="text-sm">
                 {item.description}
               </p>
-  
-              <div className="flex justify-between mt-4">
-                <p className=" font-bold self-center">{item.price}</p>
-              <button
-                className="border  border-amber-600 hover:bg-amber-600 py-1 px-4 rounded-2xl self-center"
-                onClick={()=>handleToggleDialog(item.id)}
-              >
-                Order Now
-              </button></div>
             </div>
           </div>
           ))}

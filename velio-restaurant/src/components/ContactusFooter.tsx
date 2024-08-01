@@ -1,7 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { FaTwitter, FaFacebookSquare, FaWhatsapp} from "react-icons/fa";
 
 const ContactusFooter = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const handleMessageSubmission = (e) =>{
+    e.preventDefault();
+    const inputVar = {
+      name, email, message
+    }
+  }
   return (
     <div className="flex flex-col">
       <h2 className="mx-auto font-bold text-2xl border-b-2 border-amber-600">Contact Us</h2>
@@ -18,12 +27,12 @@ const ContactusFooter = () => {
         <div className='w-2/4 flex flex-col border-2 border-amber-600 p-4'>
           <h2 className='mx-auto text-lg font-medium leading-10'>Contact us via mail</h2>
           <form className='flex flex-col gap-4 mt-2'>
-            <input placeholder='Name...' className='border p-2 rounded'/>
-            <input placeholder='Email...' className='border my-2 p-2 rounded'/>
-            <textarea placeholder='Enter your message' className='border p-2 rounded'></textarea>
+            <input placeholder='Name...' className='border p-2 rounded' value={(e)=>setName(e)}/>
+            <input placeholder='Email...' className='border my-2 p-2 rounded' value={(e)=>setEmail(e)}/>
+            <textarea placeholder='Enter your message' className='border p-2 rounded' value={(e)=>setMessage(e)}></textarea>
             <div className='flex justify-between'>
               <button className='text-amber-600'>Cancel</button>
-              <button className="border-2 border-amber-600 bg-amber-600 py-1 px-4 rounded font-semibold mt-4 text-white">Submit</button>
+              <button className="border-2 border-amber-600 bg-amber-600 py-1 px-4 rounded font-semibold mt-4 text-white" onSubmit={handleMessageSubmission}>Submit</button>
             </div>
           </form>
         </div>

@@ -2,29 +2,41 @@
     {
         "id": 0,
         "img":"./images/food.jpg",
-        "menu_name": "Fish Salad",
-        "description": "Tuna Salad",
+        "menu_name": "Tuna Salad",
+        "description": "Salad with tuna flakes",
         "price":"$4",
         "food_availability": "Availabe",
-        "expected_delivery_time": "20 mins"
+        "expected_delivery_time": "20 mins",
+        "add-ons":{
+            "Ketchup":"$1",
+            "Mayonnaise": "$0.5",
+            "Mustard": "$0.2"
+        }
     },
     {
         "id": 1,
-        "img":"../assets/salad.jpg",
-        "menu_name": "Vegan Salad",
+        "img":"@/assets/salad.jpg",
+        "menu_name": "Fruit Salad",
         "description": "Salad made from fruit and vegetable",
         "price":"$4",
         "food_availability": "Availabe",
-        "expected_delivery_time": "30 mins"
+        "expected_delivery_time": "30 mins",
+        "add-ons":{
+            "Kiwi": 0,
+            "Yogurt": "",
+            "Whipped cream": ""
+        },
+        "Extras": "Please specify"
     },
     {
         "id": 2,
-        "img":"../assets/spices.jpg",
+        "img":"@/assets/spices.jpg",
         "menu_name": "Powdered Chili Pepper",
         "description": "100% natural with zero additives",
         "price":"$10 per gram",
         "food_availability": "Available",
-        "expected_delivery_time": "20 mins"
+        "expected_delivery_time": "20 mins",
+        "add-ons":{ }
     },
     {
         "id": 3,
@@ -33,25 +45,39 @@
         "description": "100% natural with zero additives",
         "price":"$10 per gram",
         "food_availability": "Available",
-        "expected_delivery_time": "20 mins"
+        "expected_delivery_time": "20 mins",
+        "add-ons":{ }
     },
     {
         "id": 4,
         "img":"../assets/bread.jpg",
         "menu_name": "Sour dough bread",
-        "description": "Naturally generated yeast",
+        "description": "Naturally generated yeast bread",
         "price":"$8",
         "food_availability": "Availabe",
-        "expected_delivery_time": "40 mins"
+        "expected_delivery_time": "40 mins",
+        "add-ons":{
+            "Cashew nut":"",
+            "Groundnut paste": "",
+            "Raisins": ""
+        }
     },
     {
         "id": 4,
         "img":"../assets/bread.jpg",
-        "menu_name": "Sour dough bread",
-        "description": "Naturally generated yeast",
+        "menu_name": "Jollof rice",
+        "description": "Appetizingly-rich jollof ",
         "price":"$8",
         "food_availability": "Availabe",
-        "expected_delivery_time": "40 mins"
+        "expected_delivery_time": "40 mins",
+        "add-ons":{
+            "Salad":"",
+            "Beef": "",
+            "Chicken": "",
+            "Pineapple": "",
+            "Green sauce": "",
+            "Black sauce": ""
+        }
     }
 
 ]
